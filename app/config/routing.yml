@@ -1,0 +1,4 @@
+nemmi_web:
+    resource: "@nemmiWebBundle/Resources/config/routing.yml"
+    prefix:   /
+

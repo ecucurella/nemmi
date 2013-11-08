@@ -1,0 +1,7 @@
+parameters:
+#    nemmi_web.example.class: nemmi\WebBundle\Example
+
+services:
+#    nemmi_web.example:
+#        class: %nemmi_web.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
