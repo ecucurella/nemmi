@@ -1,1 +1,4 @@
-Hello {{ name }}!
+{% for concert in concerts %}
+    {{ concert.name }}
+    {{ concert.time |date('d-m-Y, H:i') }}
+{% endfor %}

@@ -7,8 +7,11 @@ use nemmi\WebBundle\Entity\User;
 
 class DefaultController extends Controller
 {
-    public function indexAction($name)
+    public function indexAction()
     {
-        return $this->render('nemmiWebBundle:Default:index.html.twig', array('name' => $name));
+
+        $concerts = $this->getDoctrine()->getRepository('nemmiWebBundle:Concert')->findBy(array(), array('time' =>  'asc'));
+
+        return $this->render('nemmiWebBundle:Default:index.html.twig', array('concerts' => $concerts));
     }
 }

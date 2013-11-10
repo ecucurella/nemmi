@@ -1,6 +1,6 @@
 <?php
 
-namespace myConcerts\CoreBundle\DataFixtures\ORM;
+namespace nemmi\WebBundle\DataFixtures\ORM;
 
 
 use Doctrine\Common\DataFixtures\AbstractFixture;
