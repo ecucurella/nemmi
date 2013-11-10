@@ -15,7 +15,6 @@ use Doctrine\Common\DataFixtures\FixtureInterface;
 use Doctrine\Common\Persistence\ObjectManager;
 use nemmi\WebBundle\Entity\Concert;
 use nemmi\WebBundle\Entity\User;
-use Symfony\Component\Form\Extension\Core\ChoiceList\ObjectChoiceList;
 
 class LoadFixturesData extends AbstractFixture implements FixtureInterface
 {
