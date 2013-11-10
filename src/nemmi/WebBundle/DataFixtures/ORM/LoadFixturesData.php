@@ -1,11 +1,4 @@
 <?php
-/**
- * Created in Onfan Package
- * User: Joan Teixidó <joan@onfan.com>
- * User: Manolo Jurado <manolo@onfan.com>
- * Date: 07/11/13
- * Time: 02:19
- */
 
 namespace myConcerts\CoreBundle\DataFixtures\ORM;
 
