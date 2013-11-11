@@ -1,0 +1,7 @@
+{% macro box(concert) %}
+<div>
+    <h2><span class='time'>{{ concert.time|date('d-m-Y, H:i') }}</span> {{ concert.name | title}}</h2>
+    <p class="place">{{ concert.place }}</p>
+</div>
+
+{% endmacro  %}

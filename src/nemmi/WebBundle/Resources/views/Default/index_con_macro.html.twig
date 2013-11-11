@@ -1,0 +1,18 @@
+{% macro box(concert) %}
+    <div>
+        <h2><span class='time'>{{ concert.time|date('d-m-Y, H:i') }}</span> {{ concert.name | title}}</h2>
+        <p class="place">{{ concert.place }}</p>
+    </div>
+
+{% endmacro  %}
+
+{# opció 1#}
+{% from 'nemmiWebBundle:Default:index_con_macro.html.twig' import box as box %}
+
+{# opció 2#}
+{% from _self import box as box %}
+
+{% for concert in concerts %}
+    {{ box(concert) }}
+{% endfor %}
+

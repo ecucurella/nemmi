@@ -1,4 +1,7 @@
+{#{% from 'nemmiWebBundle::macros.html.twig' import helper as helper %}#}
+{% import "nemmiWebBundle::macros.html.twig" as helper %}
+
 {% for concert in concerts %}
-    {{ concert.name }}
-    {{ concert.time |date('d-m-Y, H:i') }}
+    {{ helper.box(concert) }}
 {% endfor %}
+
