@@ -1,7 +1,20 @@
 {% macro box(concert) %}
 <div>
-    <h2><span class='time'>{{ concert.time|date('d-m-Y, H:i') }}</span> {{ concert.name | title}}</h2>
+    <h2><span class='time'>{{ concert.time|date('d-m-Y, H:i') }}</span><a href="{{ path('concert_show', {id: concert.id}) }}">{{ concert.name | title}}</a></h2>
     <p class="place">{{ concert.place }}</p>
 </div>
 
 {% endmacro  %}
+
+
+{% macro input1(name, value = "", type = "text", size = 20) %}
+    <input type="{{ type }}"
+           name="{{ name }}"
+           value="{{ value|e }}"
+           size="{{ size }}" />
+{% endmacro %}
+
+
+{% macro input2(name, value, type, size) %}
+    <input type="{{ type|default('text') }}" name="{{ name }}" value="{{ value|default('')|e }}" size="{{ size|default(15) }}" />
+{% endmacro %}

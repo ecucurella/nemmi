@@ -1,7 +1,19 @@
-{#{% from 'nemmiWebBundle::macros.html.twig' import helper as helper %}#}
+{% extends '::base.html.twig' %}
+
+{% from 'nemmiWebBundle::macros.html.twig' import helper as helper %}
 {% import "nemmiWebBundle::macros.html.twig" as helper %}
 
-{% for concert in concerts %}
-    {{ helper.box(concert) }}
-{% endfor %}
+{% block title "Propers concerts" %}
+
+{% block body %}
+    {% for concert in concerts %}
+        {{ helper.box(concert) }}
+    {% endfor %}
+{% endblock body %}
+
+{% block javascripts %}
+
+ {{ parent() }}
+
+{% endblock  %}
 

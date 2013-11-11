@@ -25,6 +25,8 @@ framework:
 twig:
     debug:            %kernel.debug%
     strict_variables: %kernel.debug%
+    globals:
+        facebook_app: %facebook.app%
 
 # Assetic Configuration
 assetic:
@@ -64,3 +66,6 @@ swiftmailer:
     username:  %mailer_user%
     password:  %mailer_password%
     spool:     { type: memory }
+
+parameters:
+    facebook.app: 1234
