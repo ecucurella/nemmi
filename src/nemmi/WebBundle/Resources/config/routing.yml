@@ -1,3 +1,7 @@
-nemmi_web_homepage:
+homepage:
     pattern:  /
     defaults: { _controller: nemmiWebBundle:Default:index }
+
+concert_show:
+    pattern: /concert/{id}
+    defaults: { _controller: nemmiWebBundle:Concert:show }
