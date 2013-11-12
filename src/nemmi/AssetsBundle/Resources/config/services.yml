@@ -1,0 +1,7 @@
+parameters:
+#    nemmi_assets.example.class: nemmi\AssetsBundle\Example
+
+services:
+#    nemmi_assets.example:
+#        class: %nemmi_assets.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
