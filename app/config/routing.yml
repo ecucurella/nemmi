@@ -1,3 +1,7 @@
+nemmi_assets:
+    resource: "@nemmiAssetsBundle/Resources/config/routing.yml"
+    prefix:   /
+
 nemmi_web:
     resource: "@nemmiWebBundle/Resources/config/routing.yml"
     prefix:   /

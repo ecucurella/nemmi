@@ -5,3 +5,5 @@ homepage:
 concert_show:
     pattern: /concert/{id}
     defaults: { _controller: nemmiWebBundle:Concert:show }
+    requirements:
+        id: \d+
