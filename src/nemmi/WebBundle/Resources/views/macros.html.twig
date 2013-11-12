@@ -1,5 +1,5 @@
 {% macro box(concert) %}
-<div>
+<div class="col-md-4">
     <h2><span class='time'>{{ concert.time|date('d-m-Y, H:i') }}</span>
         <a href="{{ path('concert_show', {id: concert.id}) }}">{{ concert.name | title}}</a></h2>
     <p class="place">{{ concert.place }}</p>

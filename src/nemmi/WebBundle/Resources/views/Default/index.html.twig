@@ -6,14 +6,28 @@
 {% block title "Propers concerts" %}
 
 {% block body %}
-    {% for concert in concerts %}
-        {{ helper.box(concert) }}
-    {% endfor %}
+    <div class="container">
+
+        {% for concert in concerts %}
+            {% if loop.index == 1 %}
+                <div class="row">
+            {% endif %}
+
+                {{ helper.box(concert) }}
+
+            {% if (loop.index % 3) == 0 %}
+                </div> <div class="row">
+            {% endif %}
+
+        {% endfor %}
+
+    </div>
+
 {% endblock body %}
 
 {% block javascripts %}
 
- {{ parent() }}
+    {{ parent() }}
 
-{% endblock  %}
+{% endblock %}
 
