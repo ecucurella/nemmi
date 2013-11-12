@@ -1,0 +1,3 @@
+nemmi_assets_homepage:
+    pattern:  /hello/{name}
+    defaults: { _controller: nemmiAssetsBundle:Default:index }
